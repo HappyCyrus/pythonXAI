@@ -72,3 +72,15 @@ print(float("1.234"))   # str轉float
 print(str(1.234))   # float轉str
 print(bool(1.234))   # float轉bool
 # print(int("hello"))   # 這行會報錯，因為字串裡面如果有非數字的字元，無法轉換為整數
+
+print("輸入開始")
+# input()是一個ㄎ函式，可以讓使用者輸入文字
+# ()裡面的文字是提示訊息會顯示在終端機才會等待輸入者輸入
+# input()預設輸入內容都是字串
+a = input("請輸入一些文字: ")
+print("輸入結束")
+# print(int(a) + 10)
+print(type(a))   # 證明透過input()輸入內容都是字串
+
+radius = input("請輸入半徑: ")
+print(float(radius) * float(radius) * 3.14)
